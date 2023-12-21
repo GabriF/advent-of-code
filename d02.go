@@ -54,7 +54,7 @@ func Sol() (int, int) {
 		riga := r.Text()
 
 		id := EstraiID(riga)
-		partita := strings.SplitN(s, ": ", 2)[1]
+		partita := strings.SplitN(riga, ": ", 2)[1]
 		valido, power := VerificaPartita(partita, MAX)
 
 		if valido {
